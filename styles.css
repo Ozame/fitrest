@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* ======= Workout ====== */
 
 #form-exercise {
@@ -16,3 +22,18 @@
 input[type=submit], button {
     max-width: 100px;
 }
+
+
+/* ======= index ====== */
+
+#workouts {
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.item {
+    margin: 5px;
+    background-color: aqua;
+}
+
