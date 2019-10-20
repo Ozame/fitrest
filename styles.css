@@ -1,0 +1,18 @@
+/* ======= Workout ====== */
+
+#form-exercise {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#form-exercise > div, #form-exercise > input {
+   background-color: aqua;
+   border: 1px solid black;
+    
+}
+
+input[type=submit], button {
+    max-width: 100px;
+}
