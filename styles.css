@@ -1,6 +1,39 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 5px;
+    background-color: #1D1E18;
+    color: #6B8F71;
+    border-color: #AAD2BA;
+    border-radius: 5px;
+}
+
+select {
+    width: 200px;
+}
+
+input[type=number] {
+    width: 50px;
+}
+
+
+nav {
+    background-color: #6B8F71;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+nav>a {
+    padding: 8px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+}
+
+#index-buttons {
+    display: flex;
 }
 
 
@@ -10,17 +43,42 @@
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
-#form-exercise > div, #form-exercise > input {
-   background-color: aqua;
-   border: 1px solid black;
-    
+#form-exercise>div,
+#form-exercise>input {
+    background-color: #D9FFF5;
+    border: 1px solid black;
+
 }
 
-input[type=submit], button {
+input[type=submit],
+button {
     max-width: 100px;
+}
+
+.exercise-item {
+    background-color: black;
+    margin: 5px;
+}
+
+
+#exercise-adding div {
+    display: flex;
+    width: 500px;
+}
+
+#exercise-adding div label {
+    flex-grow: 1;
+}
+
+#exercise-adding div select {
+    flex-grow: 3;
+}
+
+#exercise-adding button {
+    margin-left: auto;
 }
 
 
@@ -34,6 +92,6 @@ input[type=submit], button {
 
 .item {
     margin: 5px;
-    background-color: aqua;
+    border-color: rgb(8, 4, 4);
+    border: 2px solid;
 }
-
