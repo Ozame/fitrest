@@ -31,7 +31,7 @@ function createWorkoutList(workouts) {
         item.appendChild(itemLink);
 
         let itemDate = document.createElement("h4");
-        let itemDateText = document.createTextNode(workout['time']);
+        let itemDateText = document.createTextNode(workout['date']);
         itemDate.appendChild(itemDateText);
         item.appendChild(itemDate);
 
@@ -42,8 +42,8 @@ function createWorkoutList(workouts) {
 
 
 function createWorkout() {
-    let name = document.getElementById("workout-name");
-    let date = document.getElementById("workout-date");
+    let name = document.getElementById("workout-name").value;
+    let date = document.getElementById("workout-date").value;
     let data = {
         name: name,
         date: date
@@ -52,9 +52,8 @@ function createWorkout() {
     
     let request = new Request(url, {
         method: 'POST',
-        mode: 'cors',
-        body: data,
-        headers: new Headers()
+        body: JSON.stringify(data),
+        mode: 'cors'
     }); 
 
     fetch(request)
